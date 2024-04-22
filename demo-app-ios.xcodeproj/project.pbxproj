@@ -11,6 +11,15 @@
 		033D841D2BB70E6700FB2BAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D841C2BB70E6700FB2BAE /* ContentView.swift */; };
 		033D841F2BB70E6800FB2BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033D841E2BB70E6800FB2BAE /* Assets.xcassets */; };
 		033D84222BB70E6800FB2BAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033D84212BB70E6800FB2BAE /* Preview Assets.xcassets */; };
+		037B265D2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 037B265B2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodeld */; };
+		037B26622BB7540200E618B6 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B26612BB7540200E618B6 /* Toast.swift */; };
+		037B26642BB7542200E618B6 /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B26632BB7542200E618B6 /* ToastStyle.swift */; };
+		037B26662BB7543C00E618B6 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B26652BB7543C00E618B6 /* ToastView.swift */; };
+		037B26682BB7545000E618B6 /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B26672BB7545000E618B6 /* ToastModifier.swift */; };
+		037B266B2BB7547D00E618B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B266A2BB7547D00E618B6 /* CoreDataManager.swift */; };
+		037B266F2BB754D500E618B6 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B266E2BB754D500E618B6 /* MessageView.swift */; };
+		03B016EC2BC02995006472E4 /* WebitelSdkIos in Frameworks */ = {isa = PBXBuildFile; productRef = 03B016EB2BC02995006472E4 /* WebitelSdkIos */; };
+		03DD7FC22BD6D34C007246E7 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD7FC12BD6D34C007246E7 /* MessagesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		033D841C2BB70E6700FB2BAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		033D841E2BB70E6800FB2BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		033D84212BB70E6800FB2BAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		037B265C2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		037B26612BB7540200E618B6 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		037B26632BB7542200E618B6 /* ToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
+		037B26652BB7543C00E618B6 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		037B26672BB7545000E618B6 /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		037B266A2BB7547D00E618B6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		037B266E2BB754D500E618B6 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		037B26702BB7571A00E618B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		03DD7FC12BD6D34C007246E7 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B016EC2BC02995006472E4 /* WebitelSdkIos in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +56,7 @@
 			children = (
 				033D84192BB70E6700FB2BAE /* demo-app-ios */,
 				033D84182BB70E6700FB2BAE /* Products */,
+				033D84372BB745C600FB2BAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +71,13 @@
 		033D84192BB70E6700FB2BAE /* demo-app-ios */ = {
 			isa = PBXGroup;
 			children = (
+				037B26702BB7571A00E618B6 /* Info.plist */,
+				037B26692BB7546800E618B6 /* managers */,
+				037B265F2BB753C500E618B6 /* ui */,
 				033D841A2BB70E6700FB2BAE /* demo_app_iosApp.swift */,
-				033D841C2BB70E6700FB2BAE /* ContentView.swift */,
 				033D841E2BB70E6800FB2BAE /* Assets.xcassets */,
 				033D84202BB70E6800FB2BAE /* Preview Content */,
+				037B265B2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodeld */,
 			);
 			path = "demo-app-ios";
 			sourceTree = "<group>";
@@ -65,6 +88,51 @@
 				033D84212BB70E6800FB2BAE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		033D84372BB745C600FB2BAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		037B265F2BB753C500E618B6 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				03DD7FC32BD6D3D5007246E7 /* messages */,
+				037B26602BB753E800E618B6 /* toast */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		037B26602BB753E800E618B6 /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				037B26612BB7540200E618B6 /* Toast.swift */,
+				037B26632BB7542200E618B6 /* ToastStyle.swift */,
+				037B26672BB7545000E618B6 /* ToastModifier.swift */,
+				037B26652BB7543C00E618B6 /* ToastView.swift */,
+			);
+			path = toast;
+			sourceTree = "<group>";
+		};
+		037B26692BB7546800E618B6 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				037B266A2BB7547D00E618B6 /* CoreDataManager.swift */,
+				03DD7FC12BD6D34C007246E7 /* MessagesManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		03DD7FC32BD6D3D5007246E7 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				033D841C2BB70E6700FB2BAE /* ContentView.swift */,
+				037B266E2BB754D500E618B6 /* MessageView.swift */,
+			);
+			path = messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,9 @@
 			dependencies = (
 			);
 			name = "demo-app-ios";
+			packageProductDependencies = (
+				03B016EB2BC02995006472E4 /* WebitelSdkIos */,
+			);
 			productName = "demo-app-ios";
 			productReference = 033D84172BB70E6700FB2BAE /* demo-app-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 033D840E2BB70E6700FB2BAE;
+			packageReferences = (
+				03B016EA2BC02995006472E4 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */,
+			);
 			productRefGroup = 033D84182BB70E6700FB2BAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037B26682BB7545000E618B6 /* ToastModifier.swift in Sources */,
+				037B26662BB7543C00E618B6 /* ToastView.swift in Sources */,
+				037B26642BB7542200E618B6 /* ToastStyle.swift in Sources */,
 				033D841D2BB70E6700FB2BAE /* ContentView.swift in Sources */,
+				037B266F2BB754D500E618B6 /* MessageView.swift in Sources */,
+				037B26622BB7540200E618B6 /* Toast.swift in Sources */,
+				037B266B2BB7547D00E618B6 /* CoreDataManager.swift in Sources */,
 				033D841B2BB70E6700FB2BAE /* demo_app_iosApp.swift in Sources */,
+				037B265D2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodeld in Sources */,
+				03DD7FC22BD6D34C007246E7 /* MessagesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +357,7 @@
 				DEVELOPMENT_TEAM = K5Z3VDH6Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "demo-app-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,6 +370,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.webitel.demo-app-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +391,7 @@
 				DEVELOPMENT_TEAM = K5Z3VDH6Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "demo-app-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +404,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.webitel.demo-app-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,6 +436,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03B016EA2BC02995006472E4 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/webitel/mobile-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03B016EB2BC02995006472E4 /* WebitelSdkIos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03B016EA2BC02995006472E4 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */;
+			productName = WebitelSdkIos;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		037B265B2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				037B265C2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 037B265C2BB7473B00E618B6 /* DemoCoreDataModel.xcdatamodel */;
+			path = DemoCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 033D840F2BB70E6700FB2BAE /* Project object */;
 }

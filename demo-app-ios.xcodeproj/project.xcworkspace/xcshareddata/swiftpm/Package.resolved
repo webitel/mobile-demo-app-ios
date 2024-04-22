@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mobile-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/webitel/mobile-sdk-ios.git",
+      "state" : {
+        "revision" : "7ed266c0ae30fefdc5b588e74c47a04a33166c56",
+        "version" : "0.1.7"
+      }
+    }
+  ],
+  "version" : 2
+}
